@@ -1,0 +1,9 @@
+[Unit]
+Description=Run MGNREGA ETL daily
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

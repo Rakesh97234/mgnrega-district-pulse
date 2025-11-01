@@ -1,0 +1,9 @@
+[Unit]
+Description=MGNREGA ETL Service (runs once)
+After=network.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/MGNREGA_District_Pulse_Karnataka_full/etl
+ExecStart=/usr/bin/python3 etl.py

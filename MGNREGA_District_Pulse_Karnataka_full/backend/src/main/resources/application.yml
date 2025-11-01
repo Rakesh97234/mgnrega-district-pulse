@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/mgnrega
+    username: postgres
+    password: postgres
+  redis:
+    host: redis
+    port: 6379
